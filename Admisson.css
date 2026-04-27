@@ -1,0 +1,144 @@
+.container1 {
+  width: 100%;
+  max-width: 800px;
+  margin: 200px auto;
+  padding: 30px 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  
+  /* Shadow for modern look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  /* Smooth animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (optional but modern) */
+.container1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container1{
+    max-width: 90%;
+    padding: 25px 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container1 {
+    max-width: 95%;
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: #444;
+  border-left: 4px solid #446940;
+  padding-left: 8px;
+}
+
+/* Row (2 columns) */
+.row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Form group */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Label */
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  background: #f9f9f9;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(53, 67, 82, 0.2);
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+/* File input */
+input[type="file"] {
+  padding: 6px;
+  background: #fff;
+  border: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #57885a, #395f42);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+/* Button hover */
+button:hover {
+  background: linear-gradient(135deg, #32573b, #27492c);
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
